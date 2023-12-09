@@ -1,4 +1,4 @@
-const arr = [];
+// const arr = [];
 const sameDiv = document.querySelector('.sameDiv');
 const checkOut = document.querySelector('.checkout');
 
@@ -24,6 +24,15 @@ axios.get('https://fakestoreapi.com/products')
     console.log(err);
 })
 
+const dataa = JSON.parse (localStorage.getItem("items"))
+
+let arr ;
+if(Array.isArray(dataa)){
+    arr =[...dataa]
+}
+else {
+    arr = []
+}
 let data;
 
 function addToCart2(index){
