@@ -51,3 +51,5 @@ checkOut.addEventListener('click' , ()=>{
     window.location = 'home.html';
     // localStorage.removeItem('items');
 })
+
+
